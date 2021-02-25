@@ -1,23 +1,18 @@
 <?php
 /**
-*
-* @package phpBB Extension - DrDeath F1WebTip
-* @copyright (c) 2014 Dr.Death - www.lpi-clan.de
-* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
-*
-*/
+ * @copyright (c) 2014 Dr.Death - www.lpi-clan.de
+ * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+ */
 
 /**
-* @ignore
-*/
-if (!defined('IN_PHPBB'))
-{
-	exit;
+ * @ignore
+ */
+if (!defined('IN_PHPBB')) {
+    exit;
 }
 
-if (empty($lang) || !is_array($lang))
-{
-	$lang = array();
+if (empty($lang) || !is_array($lang)) {
+    $lang = [];
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -32,13 +27,12 @@ if (empty($lang) || !is_array($lang))
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
-
 // Adding the permissions
 // F1 WebTip permissions
-$lang = array_merge($lang, array(
-	'ACL_CAT_FORMEL'		=> 'F1 Webtipp',
-	'ACL_A_FORMEL_SETTINGS'	=> 'Kann F1 WebTipp Einstellungen verwalten',
-	'ACL_A_FORMEL_DRIVERS'	=> 'Kann F1 WebTipp Fahrer verwalten',
-	'ACL_A_FORMEL_TEAMS'	=> 'Kann F1 WebTipp Teams verwalten',
-	'ACL_A_FORMEL_RACES'	=> 'Kann F1 WebTipp Rennen verwalten',
-));
+$lang = array_merge($lang, [
+    'ACL_CAT_FORMEL'		      => 'F1 Webtipp',
+    'ACL_A_FORMEL_SETTINGS'	=> 'Kann F1 WebTipp Einstellungen verwalten',
+    'ACL_A_FORMEL_DRIVERS'	 => 'Kann F1 WebTipp Fahrer verwalten',
+    'ACL_A_FORMEL_TEAMS'	   => 'Kann F1 WebTipp Teams verwalten',
+    'ACL_A_FORMEL_RACES'	   => 'Kann F1 WebTipp Rennen verwalten',
+]);
